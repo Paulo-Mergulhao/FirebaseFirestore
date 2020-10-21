@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-auth2-77997": {
+      "hosting": {
+        "app": [
+          "fir-auth2-77997"
+        ]
+      }
+    }
+  }
+}
