@@ -73,6 +73,11 @@ export class AuthService {
     return user.emailVerified === true ? true : false;
   }
 
+  getAuth() {
+    return firebase.auth();
+  }
+
+
   async logout(): Promise<void> {
     try {
       await this.afAuth.signOut();
@@ -94,3 +99,5 @@ export class AuthService {
     return userRef.set(data, { merge: true });
   }
 }
+
+
